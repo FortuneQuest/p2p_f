@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="p2p-common" />
+        <module name="p2p-account-service" />
+        <module name="p2p-gateway-server" />
+        <module name="p2p-uaa-service" />
+        <module name="p2p-discover-server" />
+        <module name="p2p-api" />
+        <module name="p2p-transaction-service" />
+        <module name="p2p-consumer-service" />
+        <module name="p2p-repayment-service" />
+        <module name="p2p-depository-agent-service" />
+        <module name="p2p-content-search-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="p2p-account-service" options="-parameters" />
+      <module name="p2p-api" options="-parameters" />
+      <module name="p2p-common" options="-parameters" />
+      <module name="p2p-consumer-service" options="-parameters" />
+      <module name="p2p-content-search-service" options="-parameters" />
+      <module name="p2p-depository-agent-service" options="-parameters" />
+      <module name="p2p-discover-server" options="-parameters" />
+      <module name="p2p-gateway-server" options="-parameters" />
+      <module name="p2p-repayment-service" options="-parameters" />
+      <module name="p2p-transaction-service" options="-parameters" />
+      <module name="p2p-uaa-service" options="-parameters" />
+      <module name="p2p_master" options="" />
+    </option>
+  </component>
+</project>
