@@ -1,0 +1,13 @@
+# 启动端口
+server:
+    port: 53000
+
+# 应用程序名称
+spring:
+  application:
+    name: hnradio-discovery
+  main:
+    banner-mode: 'off'
+    allow-bean-definition-overriding: true
+  profiles:
+    active: dev

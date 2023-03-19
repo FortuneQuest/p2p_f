@@ -33,7 +33,7 @@
       <module name="p2p-repayment-service" options="-parameters" />
       <module name="p2p-transaction-service" options="-parameters" />
       <module name="p2p-uaa-service" options="-parameters" />
-      <module name="p2p_master" options="" />
+      <module name="p2p_master" options="-parameters" />
     </option>
   </component>
 </project>
