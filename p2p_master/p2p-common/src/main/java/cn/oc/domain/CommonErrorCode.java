@@ -18,29 +18,25 @@ public enum CommonErrorCode implements ErrorCode {
 
     ////////////////////////////////////公用异常编码 //////////////////////////
 
-    SUCCESS(0,"成功"),
-    FUSE(-1,"网关调用熔断"),
+    SUCCESS(0, "成功"),
+    FUSE(-1, "网关调用熔断"),
 
     /**
      * 传入参数与接口不匹配
      */
-     _E_100101(100101, "传入参数与接口不匹配"),
-
+    E_100101(100101, "传入参数与接口不匹配"),
     /**
      * 验证码错误
      */
     E_100102(100102, "验证码错误"),
-
     /**
      * 验证码为空
      */
     E_100103(100103, "验证码为空"),
-
     /**
      * 查询结果为空
      */
     E_100104(100104, "查询结果为空"),
-
     /**
      * ID格式不正确或超出Long存储范围
      */
@@ -55,21 +51,21 @@ public enum CommonErrorCode implements ErrorCode {
     E_999994(999994, "调用微服务-同步服务 被熔断"),
     E_999995(999995, "调用微服务-统一账户服务 被熔断"),
     E_999996(999996, "调用微服务-存管代理服务 被熔断"),
-
     /**
      * 调用微服务-还款服务 被熔断
      */
     E_999997(999997, "调用微服务-还款服务 被熔断"),
-
     CUSTOM(999998, "自定义异常"),
-
+    /**
+     * 未知错误
+     */
     UNKOWN(999999, "未知错误");
+
 
     private int code;
     private String desc;
 
-
-    private CommonErrorCode(int code ,String desc) {
+    private CommonErrorCode(int code, String desc) {
         this.code = code;
         this.desc = desc;
     }
@@ -83,11 +79,9 @@ public enum CommonErrorCode implements ErrorCode {
         return null;
     }
 
-
-
     @Override
     public int getCode() {
-        return  code;
+        return code;
     }
 
     @Override

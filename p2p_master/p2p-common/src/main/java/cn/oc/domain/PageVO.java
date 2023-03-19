@@ -8,8 +8,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Spliterator;
-import java.util.function.Consumer;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,7 +20,7 @@ import java.util.function.Consumer;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PageVo<T>  implements  Iterable<T>, Serializable {
+public class PageVO<T>  implements  Iterable<T>, Serializable {
 
 
     private List<T> content  = new ArrayList<T>();
