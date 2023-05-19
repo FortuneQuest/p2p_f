@@ -3,7 +3,7 @@ package cn.oc;
 /**
  * Created with IntelliJ IDEA.
  *
- * @ClassName : ${NAME}
+ * @ClassName :${NAME}
  * @Author: oc
  * @Date: ${YEAR}/${MONTH}/${DAY}/${TIME}
  * @Description:

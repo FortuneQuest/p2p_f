@@ -21,17 +21,8 @@
         <module>p2p-content-search-service</module>
         <module>p2p-repayment-service</module>
         <module>p2p-transaction-service</module>
-        <module>p2p-api</module>
-        <module>p2p-common</module>
-        <module>p2p-consumer-service</module>
-        <module>p2p-discover-server</module>
-        <module>p2p-gateway-server</module>
-        <module>p2p-account-service</module>
-        <module>p2p-uaa-service</module>
-        <module>p2p-depository-agent-service</module>
-        <module>p2p-content-search-service</module>
-        <module>p2p-repayment-service</module>
         <module>p2p-transaction-service</module>
+
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -55,6 +46,7 @@
         <kryo.version>4.0.2</kryo.version>
         <elastic.job.starter.version>3.0.0-RC1</elastic.job.starter.version>
         <swagger.version>2.7.0</swagger.version>
+
         <javax.servlet.api.version>3.1.0</javax.servlet.api.version>
         <javax.interceptor.api.version>1.2</javax.interceptor.api.version>
         <fastsjson.version>1.2.47</fastsjson.version>
@@ -78,9 +70,18 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${druid-boot-stater.version}</version>
+                <version>1.1.22</version>
             </dependency>
-
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+<!--                <version>2.2.7.RELEASE</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>-->
+<!--                <version>2.2.7.RELEASE</version>-->
+<!--            </dependency>-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -142,16 +143,15 @@
                 <artifactId>elasticjob-lite-spring-boot-starter</artifactId>
                 <version>${elastic.job.starter.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger-annotations.version}</version>
+            </dependency>
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
                 <version>${swagger.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>${swagger2.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.springfox</groupId>
@@ -178,11 +178,6 @@
                 <version>${fastsjson.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${alibaba.druid.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>com.baomidou</groupId>
