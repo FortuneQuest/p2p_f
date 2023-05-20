@@ -5,16 +5,14 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : ConsumerRequest
- * @Author: oc
- * @Date: 2023/03/18/18:07
- * @Description: 平台c端用户开户请求信息
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
-@ApiModel(value = "ConsumerRequest", description = "平台c端用户开户请求信息")
+@ApiModel(value = "ConsumerRequest", description = "平台c端用户开户信息")
 public class ConsumerRequest {
+
     @ApiModelProperty("id")
     private Long id;
 
@@ -47,4 +45,5 @@ public class ConsumerRequest {
 
     @ApiModelProperty("页面回跳 URL")
     private String callbackUrl;
+
 }

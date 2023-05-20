@@ -1,25 +1,27 @@
 package cn.oc.api.depository;
 
+
 import cn.oc.api.consumer.model.ConsumerRequest;
 import cn.oc.api.consumer.model.RechargeRequest;
 import cn.oc.api.consumer.model.WithdrawRequest;
 import cn.oc.api.depository.model.GatewayRequest;
 import cn.oc.api.depository.model.LoanRequest;
 import cn.oc.api.depository.model.UserAutoPreTransactionRequest;
-import cn.oc.common.domain.RestResponse;
 import cn.oc.api.repayment.model.RepaymentRequest;
 import cn.oc.api.transaction.model.ModifyProjectStatusDTO;
 import cn.oc.api.transaction.model.ProjectDTO;
+import cn.oc.common.domain.RestResponse;
 
 /**
- * Created with IntelliJ IDEA.
+ * <p>
+ * 银行存管系统代理服务API
+ * </p>
  *
- * @ClassName : DepositoryAgentApi
- * @Author: oc
- * @Date: 2023/03/18/19:09
- * @Description:  银行存管系统代理服务API
- **/
-public interface DepositoryAgentApi {
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
+public interface DepositoryAgentAPI {
     /**
      * 还款确认
      *
@@ -69,11 +71,11 @@ public interface DepositoryAgentApi {
     RestResponse<GatewayRequest> createWithdrawRecord(WithdrawRequest withdrawRequest);
 
     /**
+     * 生成用户充值数据
      *
-     ** 生成用户充值数据
      * @param rechargeRequest
      * @return
-             */
+     */
     RestResponse<GatewayRequest> createRechargeRecord(RechargeRequest rechargeRequest);
 
     /**

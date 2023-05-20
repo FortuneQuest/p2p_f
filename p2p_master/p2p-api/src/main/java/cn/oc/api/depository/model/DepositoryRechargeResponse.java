@@ -5,13 +5,13 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * Created with IntelliJ IDEA.
+ * <p>
+ * 存管充值响应信息
+ * </p>
  *
- * @ClassName : DepositoryRechargeResponse
- * @Author: oc
- * @Date: 2023/03/18/22:49
- * @Description:   存管充值响应信息
- **/
+ * @author yuelimin
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "RechargeResponse", description = "用户充值请求返回信息")
 public class DepositoryRechargeResponse extends DepositoryBaseResponse {

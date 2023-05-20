@@ -7,13 +7,14 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 标的信息查询对象
+ * </p>
  *
- * @ClassName : ProjectQueryDTO
- * @Author: oc
- * @Date: 2023/03/19/15:33
- * @Description: 标的信息查询对象
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "ProjectQueryDTO", description = "标的信息查询对象")
 public class ProjectQueryDTO {
@@ -47,4 +48,5 @@ public class ProjectQueryDTO {
 
     @ApiModelProperty("标的可用状态")
     private String status;
+
 }

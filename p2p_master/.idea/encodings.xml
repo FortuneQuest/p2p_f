@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/p2p-consumer-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/p2p-content-search-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/p2p-depository-agent-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/p2p-depository/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/p2p-depository/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/p2p-discover-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/p2p-gateway-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/p2p-repayment-service/src/main/java" charset="UTF-8" />

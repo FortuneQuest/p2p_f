@@ -9,13 +9,13 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
- * Created with IntelliJ IDEA.
+ * <p>
+ * 用户余额明细
+ * </p>
  *
- * @ClassName : BalanceDetailsDTO
- * @Author: oc
- * @Date: 2023/03/18/14:53
- * @Description: 用户余额明细
- **/
+ * @author yuelimin
+ * @since 1.8
+ */
 @Data
 @Accessors(chain = true)
 @ApiModel(value = "BalanceDetailsDTO", description = "用户余额信息")
@@ -37,5 +37,8 @@ public class BalanceDetailsDTO implements Serializable {
 
     @ApiModelProperty(value = "应用编码")
     private String appCode;
+
+    // @ApiModelProperty(value = "账户变动时间")
+    // private LocalDateTime createDate;
 
 }

@@ -1,9 +1,9 @@
 package cn.oc.account.service;
 
 import cn.oc.account.entity.Account;
-import cn.oc.api.acount.model.AccountDTO;
-import cn.oc.api.acount.model.AccountLoginDTO;
-import cn.oc.api.acount.model.AccountRegisterDTO;
+import cn.oc.api.account.model.AccountDTO;
+import cn.oc.api.account.model.AccountLoginDTO;
+import cn.oc.api.account.model.AccountRegisterDTO;
 import cn.oc.common.domain.RestResponse;
 import com.baomidou.mybatisplus.extension.service.IService;
 

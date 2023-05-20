@@ -5,13 +5,10 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : ConsumerRegisterDTO
- * @Author: oc
- * @Date: 2023/03/18/18:03
- * @Description: 用户注册信息
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "ConsumerRegisterDTO", description = "用户注册信息")
 public class ConsumerRegisterDTO {
@@ -30,4 +27,5 @@ public class ConsumerRegisterDTO {
 
     @ApiModelProperty("验证码key")
     private String key;
+
 }

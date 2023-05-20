@@ -7,16 +7,16 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 返回参数信息基类
+ * </p>
  *
- * @ClassName : DepositoryBaseResponse
- * @Author: oc
- * @Date: 2023/03/18/19:44
- * @Description: 返回参数信息基类
- **/
+ * @author yuelimin
+ * @since 1.8
+ */
 @Data
 @Accessors(chain = true)
-public class DepositoryBaseResponse  implements Serializable {
+public class DepositoryBaseResponse implements Serializable {
 
     @ApiModelProperty("返回码")
     private String respCode;
@@ -29,4 +29,5 @@ public class DepositoryBaseResponse  implements Serializable {
 
     @ApiModelProperty("请求流水号")
     private String requestNo;
+
 }

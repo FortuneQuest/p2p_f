@@ -8,13 +8,13 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 还款信息
+ * </p>
  *
- * @ClassName : RepaymentRequest
- * @Author: oc
- * @Date: 2023/03/19/0:32
- * @Description: 还款信息
- **/
+ * @author yuelimin
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "RepaymentRequest", description = "还款请求信息")
 public class RepaymentRequest {

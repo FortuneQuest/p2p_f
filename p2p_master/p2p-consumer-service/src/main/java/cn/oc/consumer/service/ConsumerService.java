@@ -1,63 +1,114 @@
 package cn.oc.consumer.service;
 
 
+
 import cn.oc.api.consumer.model.BorrowerDTO;
 import cn.oc.api.consumer.model.ConsumerDTO;
 import cn.oc.api.consumer.model.ConsumerRegisterDTO;
 import cn.oc.api.consumer.model.ConsumerRequest;
 import cn.oc.api.depository.model.DepositoryConsumerResponse;
+import cn.oc.api.depository.model.DepositoryRechargeResponse;
+import cn.oc.api.depository.model.DepositoryWithdrawResponse;
 import cn.oc.api.depository.model.GatewayRequest;
 import cn.oc.common.domain.RestResponse;
-import cn.oc.consumer.entity.Consumer;
-import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.io.IOException;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : ConsumerService
- * @Author: oc
- * @Date: 2023/04/11/15:12
- * @Description:
- **/
-public interface ConsumerService extends IService<Consumer> {
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
+public interface ConsumerService {
     /**
-     * 检测用户是否存在
-     * @param mobile
+     * 获取借款人基本信息
+     *
+     * @param id
      * @return
      */
-    Integer checkMobile(String mobile);
-    /**
-     * 用户注册
-     * @param consumerRegisterDTO
-     * @return
-     */
-    void register(ConsumerRegisterDTO consumerRegisterDTO);
+    BorrowerDTO getBorrower(Long id);
 
     /**
-     生成开户数据
-     @param consumerRequest
-     @return
+     * 生成用户提现数据
+     *
+     * @param amount      提现金额
+     * @param fallbackUrl 回调地址
+     * @param mobile      手机号
+     * @return
      */
-    RestResponse<GatewayRequest> createConsumer(ConsumerRequest consumerRequest);
+    RestResponse<GatewayRequest> createWithdrawRecord(String amount, String fallbackUrl, String mobile);
+
+    /**
+     * 更新提现回调回调状态
+     *
+     * @param depositoryWithdrawResponse
+     * @return
+     */
+    Boolean modifyWithdrawRecordResult(DepositoryWithdrawResponse depositoryWithdrawResponse);
+
+    /**
+     * 生成用户充值数据
+     *
+     * @param amount   充值金额
+     * @param fallback 回调地址
+     * @param mobile   手机号
+     * @return
+     */
+    RestResponse<GatewayRequest> createRechargeRecord(String amount, String fallback, String mobile);
+
+    /**
+     * 更新充值回调状态
+     *
+     * @param depositoryRechargeResponse
+     * @return
+     */
+    Boolean modifyRechargeRecordResult(DepositoryRechargeResponse depositoryRechargeResponse);
+
+    /**
+     * 根据用户流水号查询用户余额信息
+     *
+     * @param userNo 用户流水号
+     * @return
+     */
+    // BalanceDetailsDTO getBalanceDetailsByUserNo(String userNo) throws IOException;
+
+    /**
+     * 根据手机号获取用户信息
+     *
+     * @param mobile 手机号
+     * @return
+     */
+    ConsumerDTO getConsumerByMobile(String mobile);
 
     /**
      * 更新开户结果
+     *
      * @param response
      * @return
      */
     Boolean modifyResult(DepositoryConsumerResponse response);
 
     /**
-     * 通过手机号获取当前用户信息
-     * @param mobile
+     * 生成开户数据
+     *
+     * @param consumerRequest
      * @return
      */
-    ConsumerDTO getByMobile(String mobile);
+    RestResponse<GatewayRequest> createConsumer(ConsumerRequest consumerRequest) throws IOException;
 
     /**
-     * 获取借款人基本信息
-     * @param id
+     * 检测用户是否存在
+     *
+     * @param mobile 用户手机号
      * @return
      */
-    BorrowerDTO getBorrower(Long id);
+    Integer checkMobile(String mobile);
+
+    /**
+     * 用户注册
+     *
+     * @param consumerRegisterDTO 用户注册信息
+     * @return
+     */
+    void register(ConsumerRegisterDTO consumerRegisterDTO);
 }

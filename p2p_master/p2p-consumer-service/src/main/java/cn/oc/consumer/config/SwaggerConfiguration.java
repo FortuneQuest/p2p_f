@@ -12,28 +12,32 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/**
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Configuration
-@ConditionalOnProperty(prefix = "swagger",value = {"enable"},havingValue = "true")
-@EnableSwagger2  //开启swagger注解支持
+@EnableSwagger2
+@ConditionalOnProperty(prefix = "swagger", value = {"enable"}, havingValue = "true")
 public class SwaggerConfiguration {
+    @Bean
+    public Docket buildDocket() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(buildApiInfo())
+                .select()
+                // 要扫描的API(Controller)基础包
+                .apis(RequestHandlerSelectors.basePackage("com.wanxin"))
+                .paths(PathSelectors.any())
+                .build();
+    }
 
-	@Bean
-	public Docket buildDocket() {
-		return new Docket(DocumentationType.SWAGGER_2)
-				.apiInfo(buildApiInfo())
-				.select()
-				// 要扫描的API(Controller)基础包
-				.apis(RequestHandlerSelectors.basePackage("cn.oc"))
-				.paths(PathSelectors.any())
-				.build();
-	}
-
-	private ApiInfo buildApiInfo() {
-		Contact contact = new Contact("oc","","");
-		return new ApiInfoBuilder()
-				.title("金融P2P平台-用户服务API文档")
-				.description("包含用户服务api")
-				.contact(contact)
-				.version("1.0.0").build();
-	}
+    private ApiInfo buildApiInfo() {
+        Contact contact = new Contact("岳立民", "https://github.com/mikuhuyo", "yueliminvc@outlook.com");
+        return new ApiInfoBuilder()
+                .title("万信金融P2P平台-用户服务API文档")
+                .description("用户服务api")
+                .contact(contact)
+                .version("1.0.0").build();
+    }
 }

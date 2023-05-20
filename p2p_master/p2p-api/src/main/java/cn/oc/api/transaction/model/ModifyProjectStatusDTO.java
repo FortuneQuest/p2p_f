@@ -3,26 +3,24 @@ package cn.oc.api.transaction.model;
 import lombok.Data;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 修改标的状态DTO
+ * </p>
  *
- * @ClassName : ModifyProjectStatusDTO
- * @Author: oc
- * @Date: 2023/03/19/14:35
- * @Description:  修改标的状态DTO
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 public class ModifyProjectStatusDTO {
-
     /**
      * 请求流水号
      */
     private String requestNo;
-
     /**
      * 标的号
      */
     private String projectNo;
-
     /**
      * 更新标的状态
      */

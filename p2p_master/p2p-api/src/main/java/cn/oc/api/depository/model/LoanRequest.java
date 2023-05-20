@@ -6,13 +6,13 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 标的满标放款信息
+ * </p>
  *
- * @ClassName : LoanRequest
- * @Author: oc
- * @Date: 2023/03/18/23:50
- * @Description: 标的满标放款信息
- **/
+ * @author yuelimin
+ * @since 1.8
+ */
 @Data
 public class LoanRequest {
     /**

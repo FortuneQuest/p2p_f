@@ -1,5 +1,6 @@
 package cn.oc.common.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -81,5 +82,10 @@ public class RestResponse<T> {
                 ", msg='" + msg + '\'' +
                 ", result=" + result +
                 '}';
+    }
+
+    @JsonIgnore
+    public Boolean isSuccessful() {
+        return this.code == 0;
     }
 }

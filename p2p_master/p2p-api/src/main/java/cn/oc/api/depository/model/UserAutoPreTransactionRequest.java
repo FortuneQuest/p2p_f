@@ -7,14 +7,13 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 预授权处理请求信息
+ * </p>
  *
- * @ClassName : UserAutoPreTransationRequest
- * @Author: oc
- * @Date: 2023/03/19/0:04
- * @Description: 预授权处理请求信息
- **/
-
+ * @author yuelimin
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "UserAutoPreTransactionRequest", description = "预授权处理请求信息")
 public class UserAutoPreTransactionRequest {

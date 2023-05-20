@@ -1,17 +1,18 @@
 package cn.oc.api.depository.model;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 开户返回参数信息
+ * </p>
  *
- * @ClassName : DepositoryConsumerResponse
- * @Author: oc
- * @Date: 2023/03/18/20:27
- * @Description:  用户开户返回参数信息
- **/
+ * @author yuelimin
+ * @since 1.8
+ */
+@Data
 public class DepositoryConsumerResponse extends DepositoryBaseResponse {
-
     @ApiModelProperty("银行代码")
     private String bankCode;
 

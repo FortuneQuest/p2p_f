@@ -1,7 +1,7 @@
 package cn.oc.uaa.domain;
 
-import cn.oc.api.acount.model.AccountDTO;
-import cn.oc.api.acount.model.AccountLoginDTO;
+import cn.oc.api.account.model.AccountDTO;
+import cn.oc.api.account.model.AccountLoginDTO;
 import cn.oc.common.domain.RestResponse;
 import cn.oc.common.util.StringUtil;
 import cn.oc.uaa.agent.AccountApiAgent;

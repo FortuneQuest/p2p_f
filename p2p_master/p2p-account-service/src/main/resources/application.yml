@@ -1,4 +1,4 @@
-# -Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53050
+# -Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53030
 app:
   id: account-service
 apollo:

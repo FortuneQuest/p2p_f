@@ -8,13 +8,10 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : ProjectDTO
- * @Author: oc
- * @Date: 2023/03/19/14:58
- * @Description:
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class ProjectDTO {
@@ -137,4 +134,3 @@ public class ProjectDTO {
     @JsonDeserialize(using = DateJsonDeserializer.class)
     private Date modifyDate;
 }
-

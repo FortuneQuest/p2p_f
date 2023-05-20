@@ -5,13 +5,14 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 投标信息
+ * </p>
  *
- * @ClassName : ProjectInvestDTO
- * @Author: oc
- * @Date: 2023/03/19/15:32
- * @Description:  投标信息
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "ProjectInvestDTO", description = "用户投标信息")
 public class ProjectInvestDTO {

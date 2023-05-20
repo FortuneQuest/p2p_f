@@ -8,17 +8,19 @@ import lombok.experimental.Accessors;
 import java.math.BigDecimal;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 封装提现请求数据
+ * </p>
  *
- * @ClassName : WithdrawRequest
- * @Author: oc
- * @Date: 2023/03/18/19:04
- * @Description: 封装提现请求数据
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @Accessors(chain = true)
 @ApiModel("用户提现请求信息")
 public class WithdrawRequest {
+
     @ApiModelProperty("标识")
     private Long id;
 

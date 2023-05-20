@@ -1,23 +1,21 @@
 package cn.oc.api.consumer;
 
+
 import cn.oc.api.consumer.model.*;
 import cn.oc.api.depository.model.GatewayRequest;
 import cn.oc.common.domain.RestResponse;
+
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.math.BigDecimal;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : ConsumerApi
- * @Author: oc
- * @Date: 2023/03/18/14:00
- * @Description:
- **/
-public interface ConsumerApi {
-
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
+public interface ConsumerAPI {
     /**
      * 获取当前登录用户银行卡明细
      *
@@ -88,6 +86,15 @@ public interface ConsumerApi {
      * @return
      */
     RestResponse<GatewayRequest> createWithdrawRecord(String amount, String callbackUrl);
+
+    /**
+     * 生成充值请求数据
+     *
+     * @param amount   充值金额
+     * @param callback 回调地址
+     * @return
+     */
+    RestResponse<GatewayRequest> createRechargeRecord(String amount, String callback);
 
     /**
      * 根据用户流水号获取用户余额信息

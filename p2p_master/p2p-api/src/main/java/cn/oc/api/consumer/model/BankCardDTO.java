@@ -5,13 +5,10 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : BankCardDTO
- * @Author: oc
- * @Date: 2023/03/18/15:28
- * @Description:  银行卡信息
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "BankCardDTO", description = "银行卡信息")
 public class BankCardDTO {
@@ -39,4 +36,5 @@ public class BankCardDTO {
 
     @ApiModelProperty("可用状态")
     private Integer status;
+
 }

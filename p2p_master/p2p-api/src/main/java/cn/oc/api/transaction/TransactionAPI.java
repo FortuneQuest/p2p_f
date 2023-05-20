@@ -1,21 +1,19 @@
 package cn.oc.api.transaction;
 
+
+
+import cn.oc.api.transaction.model.*;
 import cn.oc.common.domain.PageVO;
 import cn.oc.common.domain.RestResponse;
-import cn.oc.api.transaction.model.*;
 
 import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : TransactionAPI
- * @Author: oc
- * @Date: 2023/03/19/0:40
- * @Description:
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 public interface TransactionAPI {
-
     /**
      * 满标放款审核
      *

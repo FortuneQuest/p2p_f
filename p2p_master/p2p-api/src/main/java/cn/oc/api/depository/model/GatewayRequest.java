@@ -5,13 +5,11 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * Created with IntelliJ IDEA.
+ * 与银行存管系统对接使用的签名请求数据
  *
- * @ClassName : GatewayRequest
- * @Author: oc
- * @Date: 2023/03/18/23:44
- * @Description: 与银行存管系统对接使用的签名请求数据
- **/
+ * @author yuelimin
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "GatewayRequest", description = "与银行存管系统对接使用的签名请求数据")
 public class GatewayRequest {

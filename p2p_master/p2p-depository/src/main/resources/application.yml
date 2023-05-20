@@ -1,0 +1,20 @@
+# command -Denv=DEV -Dapollo.cacheDir=/opt/data/cache-dir -Dapollo.cluster=DEFAULT
+  #-Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=55010
+app:
+  id: depository
+apollo:
+  bootstrap:
+    enabled: true
+    #    eagerLoad:
+    #      enabled: true
+    namespaces: application,micro_service.spring-boot-druid,micro_service.spring-boot-http,micro_service.spring-freemarker,micro_service.mybatis-plus,micro_service.spring-rocketmq
+spring:
+  application:
+    name: depository
+# 日志配置
+#logging:
+#  config: classpath:log4j2-dev.xml
+
+
+
+

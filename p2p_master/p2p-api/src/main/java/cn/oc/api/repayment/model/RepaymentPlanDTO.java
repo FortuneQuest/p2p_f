@@ -6,16 +6,12 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : RepaymentPlanDTO
- * @Author: oc
- * @Date: 2023/03/19/0:30
- * @Description:
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 public class RepaymentPlanDTO {
-
     /**
      * 主键
      */

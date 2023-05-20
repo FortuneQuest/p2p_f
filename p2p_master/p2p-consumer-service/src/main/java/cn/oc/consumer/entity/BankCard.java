@@ -13,8 +13,9 @@ import java.io.Serializable;
  * 用户绑定银行卡信息
  * </p>
  *
- * @author zhupeiyuan
- * @since 2019-05-07
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
  */
 @Data
 @TableName("bank_card")
@@ -40,11 +41,11 @@ public class BankCard implements Serializable {
     @TableField("BANK_CODE")
     private String bankCode;
 
-	/**
-	 * 银行名称
-	 */
-	@TableField("BANK_NAME")
-	private String bankName;
+    /**
+     * 银行名称
+     */
+    @TableField("BANK_NAME")
+    private String bankName;
 
     /**
      * 银行卡号
@@ -63,6 +64,5 @@ public class BankCard implements Serializable {
      */
     @TableField("STATUS")
     private Integer status;
-
 
 }

@@ -8,13 +8,14 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 投标信息预览
+ * </p>
  *
- * @ClassName : TenderOverviewDTO
- * @Author: oc
- * @Date: 2023/03/19/15:44
- * @Description:   投标信息预览
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "TenderOverviewDTO", description = "投标信息预览")
 public class TenderOverviewDTO {
@@ -37,4 +38,5 @@ public class TenderOverviewDTO {
     @ApiModelProperty("创建时间")
     // private LocalDateTime createDate;
     private Date createDate;
+
 }

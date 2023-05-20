@@ -1,7 +1,8 @@
 package cn.oc.uaa.agent;
 
-import cn.oc.api.acount.model.AccountDTO;
-import cn.oc.api.acount.model.AccountLoginDTO;
+import cn.oc.api.account.model.AccountDTO;
+import cn.oc.api.account.model.AccountLoginDTO;
+
 import cn.oc.common.domain.BusinessException;
 import cn.oc.common.domain.CommonErrorCode;
 import cn.oc.common.domain.RestResponse;

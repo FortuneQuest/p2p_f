@@ -9,24 +9,25 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * Created with IntelliJ IDEA.
+ * <p>
+ * 存管交易记录表
+ * </p>
  *
- * @ClassName : DepositoryRecordDTO
- * @Author: oc
- * @Date: 2023/03/18/22:57
- * @Description: 存管交易记录表
- **/
+ * @author yuelimin
+ * @since 1.8
+ */
 @Data
-@EqualsAndHashCode(callSuper = false)  //如果callSuper为false,则不会涉及父类的属性，而callSuper为true时
-                                        // ，表示对父类的属性也要生成equals和hashCode方法
+@EqualsAndHashCode(callSuper = false)
 @ApiModel(value = "DepositoryRecordDTO对象", description = "存管交易记录表")
 public class DepositoryRecordDTO implements Serializable {
-
     @ApiModelProperty(value = "主键")
     private Long id;
 
     @ApiModelProperty(value = "请求流水号")
     private String requestNo;
+
+    @ApiModelProperty(value = "请求类型:1.用户信息(新增, 编辑) 2.绑卡信息")
+    private String requestType;
 
     @ApiModelProperty(value = "业务实体类型")
     private String objectType;
@@ -49,4 +50,3 @@ public class DepositoryRecordDTO implements Serializable {
     @ApiModelProperty("返回数据")
     private String responseData;
 }
-

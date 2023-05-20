@@ -7,13 +7,10 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : ProjectQueryParamsDTO
- * @Author: oc
- * @Date: 2023/03/19/0:37
- * @Description: 标的检索条件
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "ProjectQueryParamsDTO", description = "标的检索条件")
 public class ProjectQueryParamsDTO {
@@ -41,7 +38,6 @@ public class ProjectQueryParamsDTO {
 
     @ApiModelProperty("起止年化利率(投资人视图)")
     private BigDecimal endAnnualRate;
-
 
     @ApiModelProperty("标的状态")
     private String projectStatus;

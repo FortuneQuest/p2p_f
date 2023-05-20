@@ -5,16 +5,16 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * Created with IntelliJ IDEA.
+ * <p>
+ * 存管提现响应信息
+ * </p>
  *
- * @ClassName : DepositoryWithdrawResponse
- * @Author: oc
- * @Date: 2023/03/18/23:40
- * @Description: 存管提现响应信息
- **/
+ * @author yuelimin
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "WithdrawResponse", description = "用户提现请求返回信息")
-public class DepositoryWithdrawResponse extends DepositoryBaseResponse{
+public class DepositoryWithdrawResponse extends DepositoryBaseResponse {
 
     @ApiModelProperty("交易状态")
     private String transactionStatus;

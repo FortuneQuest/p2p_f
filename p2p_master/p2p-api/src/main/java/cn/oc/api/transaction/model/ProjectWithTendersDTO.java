@@ -6,16 +6,16 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 标的还款信息
+ * </p>
  *
- * @ClassName : ProjectWithTendersDTO
- * @Author: oc
- * @Date: 2023/03/19/15:36
- * @Description:  标的还款信息
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 public class ProjectWithTendersDTO {
-
     /**
      * 标的信息
      */

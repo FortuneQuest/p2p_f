@@ -5,13 +5,10 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : IdCardDTO
- * @Author: oc
- * @Date: 2023/03/18/18:35
- * @Description: 百度ORC识别身份证信息
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "IdCardDTO", description = "百度ORC识别身份证信息")
 public class IdCardDTO {

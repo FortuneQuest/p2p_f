@@ -8,17 +8,19 @@ import lombok.experimental.Accessors;
 import java.math.BigDecimal;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 用户充值请求信息
+ * </p>
  *
- * @ClassName : RechargeRequest
- * @Author: oc
- * @Date: 2023/03/18/18:56
- * @Description: 用户充值请求信息
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @Accessors(chain = true)
 @ApiModel("用户充值请求信息")
 public class RechargeRequest {
+
     @ApiModelProperty("标识")
     private Long id;
 

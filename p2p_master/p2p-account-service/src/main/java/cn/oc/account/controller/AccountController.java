@@ -1,10 +1,11 @@
 package cn.oc.account.controller;
 
 import cn.oc.account.service.impl.AccountServiceImpl;
-import cn.oc.api.acount.AccountApi;
-import cn.oc.api.acount.model.AccountDTO;
-import cn.oc.api.acount.model.AccountLoginDTO;
-import cn.oc.api.acount.model.AccountRegisterDTO;
+
+import cn.oc.api.account.AccountAPI;
+import cn.oc.api.account.model.AccountDTO;
+import cn.oc.api.account.model.AccountLoginDTO;
+import cn.oc.api.account.model.AccountRegisterDTO;
 import cn.oc.common.domain.RestResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -22,7 +23,7 @@ import org.springframework.web.bind.annotation.*;
  **/
 @RestController
 @Api("统一账号服务api")
-public class AccountController implements AccountApi {
+public class AccountController implements AccountAPI {
 
     @Autowired
     private AccountServiceImpl accountService;

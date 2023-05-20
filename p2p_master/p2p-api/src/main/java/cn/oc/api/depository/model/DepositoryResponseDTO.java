@@ -6,16 +6,15 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * Created with IntelliJ IDEA.
+ * <P>
+ * 银行存管系统返回str, 转换的json对象
+ * </p>
  *
- * @ClassName : DepositoryResponseDTO
- * @Author: oc
- * @Date: 2023/03/18/23:37
- * @Description:
- **/
+ * @author yuelimin
+ * @since 1.8
+ */
 @Data
 public class DepositoryResponseDTO<T> implements Serializable {
-
     /**
      * 业务数据报文, JSON格式
      */

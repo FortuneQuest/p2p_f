@@ -21,7 +21,7 @@
         <module>p2p-content-search-service</module>
         <module>p2p-repayment-service</module>
         <module>p2p-transaction-service</module>
-        <module>p2p-transaction-service</module>
+        <module>p2p-depository</module>
 
     </modules>
     <parent>

@@ -16,6 +16,7 @@
         <module name="p2p-transaction-service" />
         <module name="p2p-consumer-service" />
         <module name="p2p-repayment-service" />
+        <module name="p2p-depository" />
         <module name="p2p-depository-agent-service" />
         <module name="p2p-content-search-service" />
       </profile>
@@ -31,13 +32,14 @@
       <module name="p2p-common" options="-parameters" />
       <module name="p2p-consumer-service" options="-parameters" />
       <module name="p2p-content-search-service" options="-parameters" />
+      <module name="p2p-depository" options="-parameters" />
       <module name="p2p-depository-agent-service" options="-parameters" />
       <module name="p2p-discover-server" options="-parameters" />
       <module name="p2p-gateway-server" options="-parameters" />
       <module name="p2p-repayment-service" options="-parameters" />
       <module name="p2p-transaction-service" options="-parameters" />
       <module name="p2p-uaa-service" options="-parameters" />
-      <module name="p2p_master" options="-parameters" />
+      <module name="p2p_master" options="" />
       <module name="wanxinp2p-transaction-service" options="-parameters" />
     </option>
   </component>

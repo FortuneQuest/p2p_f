@@ -7,13 +7,10 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : ConsumerDTO
- * @Author: oc
- * @Date: 2023/03/18/17:55
- * @Description:  平台c端用户信息
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "ConsumerDTO", description = "平台c端用户信息")
 public class ConsumerDTO {
@@ -56,4 +53,5 @@ public class ConsumerDTO {
 
     @ApiModelProperty("可贷额度")
     private BigDecimal loanAmount;
+
 }

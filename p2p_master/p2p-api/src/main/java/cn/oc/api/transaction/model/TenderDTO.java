@@ -6,16 +6,16 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * Created with IntelliJ IDEA.
+ * <p>
+ * 投标信息表
+ * </p>
  *
- * @ClassName : TenderDTO
- * @Author: oc
- * @Date: 2023/03/19/15:37
- * @Description: 投标信息表
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 public class TenderDTO {
-
     /**
      * 主键
      */
@@ -96,4 +96,5 @@ public class TenderDTO {
      * 预期收益
      */
     private BigDecimal expectedIncome;
+
 }

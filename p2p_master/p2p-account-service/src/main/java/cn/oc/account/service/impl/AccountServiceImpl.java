@@ -5,9 +5,9 @@ import cn.oc.account.entity.Account;
 import cn.oc.account.mapper.AccountMapper;
 import cn.oc.account.service.AccountService;
 import cn.oc.account.service.SmsService;
-import cn.oc.api.acount.model.AccountDTO;
-import cn.oc.api.acount.model.AccountLoginDTO;
-import cn.oc.api.acount.model.AccountRegisterDTO;
+import cn.oc.api.account.model.AccountDTO;
+import cn.oc.api.account.model.AccountLoginDTO;
+import cn.oc.api.account.model.AccountRegisterDTO;
 import cn.oc.common.domain.BusinessException;
 import cn.oc.common.domain.RestResponse;
 import cn.oc.common.util.PasswordUtil;
@@ -67,7 +67,7 @@ public class AccountServiceImpl  extends ServiceImpl<AccountMapper, Account> imp
     @Override
     public AccountDTO register(AccountRegisterDTO accountRegisterDTO) {
         Account account = new Account();
-        BeanUtils.copyProperties(accountRegisterDTO,account,"password");
+        BeanUtils.copyProperties(accountRegisterDTO,account);
         account.setPassword(PasswordUtil.generate(accountRegisterDTO.getPassword()));
         if (smsEnable) {
             account.setPassword(account.getMobile());

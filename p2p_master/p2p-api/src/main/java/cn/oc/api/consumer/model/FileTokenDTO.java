@@ -5,13 +5,10 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * Created with IntelliJ IDEA.
- *
- * @ClassName : FileTokenDTO
- * @Author: oc
- * @Date: 2023/03/18/18:16
- * @Description:  上传文件凭证
- **/
+ * @author yuelimin
+ * @version 1.0.0
+ * @since 1.8
+ */
 @Data
 @ApiModel(value = "FileTokenDTO", description = "上传文件凭证")
 public class FileTokenDTO {
